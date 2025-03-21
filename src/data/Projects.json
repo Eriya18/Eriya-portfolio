@@ -14,7 +14,7 @@
     "demo": "https://eriya18.github.io/EMI_Calc/"
   },
   {
-    "title": "Project C",
+    "title": "Word Guess Game",
     "imageSrc": "assets/projects/guess-word.png",
     "description": "A simple word-guessing game where players guess the hidden word within a limited number of attempts.",
     "skills": ["HTML", "CSS", "JS"],

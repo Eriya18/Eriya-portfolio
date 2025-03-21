@@ -1,48 +1,49 @@
-import React from 'react'
-import skills from "../../data/skills.json"
-import history from "../../data/history.json"
+import React from 'react';
+import skills from "../../data/skills.json";
+import history from "../../data/history.json";
 import styles from "./Experience.module.css";
-// import { getImageUrl } from '../../utils'
+
 export const getImageUrl = (path) => {
-    return "/" + path;
-  };
+  return `${import.meta.env.BASE_URL}${path}`;
+};
 
 export const Experience = () => {
   return (
     <section className={styles.container} id="Experience">
-        <h2 className={styles.title}>Experience</h2>
-        <div className={styles.content}>
-            <div className={styles.skills}>{
-            skills.map((skill, id)=>{
-                return (
-                <div key={id} className={styles.skill}>
-                    <div className={styles.skillImageContainer}>
-                        <img src={getImageUrl(skill.imageSrc)} alt="" />
-                        </div>
-                    <p>{skill.title}</p>
-                </div>
-            );
-        })}
+      <h2 className={styles.title}>Experience</h2>
+      <div className={styles.content}>
+
+        {/* Skills Section */}
+        <div className={styles.skills}>
+          {skills.map((skill, id) => (
+            <div key={id} className={styles.skill}>
+              <div className={styles.skillImageContainer}>
+                <img src={getImageUrl(skill.imageSrc)} alt={skill.title} />
+              </div>
+              <p>{skill.title}</p>
             </div>
-            <ul className={styles.history}>
-                {history.map((historyItem, id)=>{
-                        return (
-                        <li key={id} className={styles.historyItem}>
-                            <img src={getImageUrl(historyItem.imageSrc)} alt="" />
-                            <div className={styles.historyItemDetails}>
-                                <h3>{`${historyItem.role}, ${historyItem.organisation}`}</h3>
-                                <p>{`${historyItem.startDate} - ${historyItem.endDate}`}</p>
-                                <ul>{historyItem.experiences.map((experience, id)=>{
-                                    return(
-                                    <li key={id}>{experience}</li>
-                    )})}
-                    </ul>
-                    </div>
-                    </li>
-                    )})
-                }
-            </ul>
+          ))}
         </div>
+
+        {/* Experience History Section */}
+        <ul className={styles.history}>
+          {history.map((historyItem, id) => (
+            <li key={id} className={styles.historyItem}>
+              <img src={getImageUrl(historyItem.imageSrc)} alt={historyItem.organisation} />
+              <div className={styles.historyItemDetails}>
+                <h3>{`${historyItem.role}, ${historyItem.organisation}`}</h3>
+                <p>{`${historyItem.startDate} - ${historyItem.endDate}`}</p>
+                <ul>
+                  {historyItem.experiences.map((experience, idx) => (
+                    <li key={idx}>{experience}</li>
+                  ))}
+                </ul>
+              </div>
+            </li>
+          ))}
+        </ul>
+
+      </div>
     </section>
-  )
-}
+  );
+};
