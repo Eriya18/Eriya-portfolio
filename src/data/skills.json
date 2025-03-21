@@ -1,0 +1,30 @@
+[
+    {
+        "title": "MS Office", 
+        "imageSrc": "assets/skills/microsoft.png"
+    },
+    {
+        "title": "HTML", 
+        "imageSrc": "assets/skills/html.png"
+    },
+    {
+        "title": "CSS", 
+        "imageSrc": "assets/skills/css.png"
+    },
+    {
+        "title": "React", 
+        "imageSrc": "assets/skills/react.png"
+    },
+    {
+        "title": "Python", 
+        "imageSrc": "assets/skills/py.jpeg"
+    },
+    {
+        "title": "C", 
+        "imageSrc": "assets/skills/C.jpeg"
+    },
+    {
+        "title": "JavaScript", 
+        "imageSrc": "assets/skills/js.jpeg"
+    }
+]

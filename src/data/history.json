@@ -1,0 +1,18 @@
+[
+    {
+        "role": "Co-ordinator",
+        "organisation": "GIIT Computer Centre",
+        "startDate": "July, 2024",
+        "endDate": "Present",
+        "experiences": ["Working on ensuring smooth execution of events and activities."],
+        "imageSrc": "assets/history/GIIT.jpg"
+    },
+    {
+        "role": "Quality Analyst Intern",
+        "organisation": "Deadal Technovations",
+        "startDate": "December, 2024",
+        "endDate": "January, 2025",
+        "experiences": ["Worked on ensuring website reliability"],
+        "imageSrc": "assets/history/daedal.jpeg"
+    }
+]

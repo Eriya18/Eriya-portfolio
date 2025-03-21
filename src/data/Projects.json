@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Age Calculator",
+        "imageSrc": "assets/projects/birth_calc.png",
+        "description": "A simple web application that calculates a person's age based on their date of birth.",
+        "skills": ["HTML", "CSS", "JS"],
+        "demo": "https://eriya18.github.io/Age_Calc/"
+  },
+  {
+    "title": "EMI Calculator",
+    "imageSrc": "assets/projects/emi_calc.png",
+    "description": "A simple EMI calculator to compute loan repayments based on principal, interest rate, and tenure.",
+    "skills": ["HTML", "CSS", "JS"],
+    "demo": "https://eriya18.github.io/EMI_Calc/"
+  },
+  {
+    "title": "Project C",
+    "imageSrc": "assets/projects/guess-word.png",
+    "description": "A simple word-guessing game where players guess the hidden word within a limited number of attempts.",
+    "skills": ["HTML", "CSS", "JS"],
+    "demo": "https://eriya18.github.io/WordGuess/"
+    }
+]
