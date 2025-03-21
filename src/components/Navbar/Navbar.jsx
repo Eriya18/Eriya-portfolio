@@ -1,10 +1,8 @@
 import { useState } from "react";
-import React from 'react';
+import React from "react";
 import styles from "./Navbar.module.css";
-
-export const getImageUrl = (path) => {
-  return `${import.meta.env.BASE_URL}${path}`;
-};
+import MenuIcon from "../../assets/nav/MenuIcon.png";
+import CloseIcon from "../../assets/nav/closeIcon.png";
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,10 +12,10 @@ export const Navbar = () => {
       <a className={styles.title} href="/">Portfolio</a>
 
       <div className={styles.menu}>
-        {/* Updated image source */}
+        {/* Updated image import instead of dynamic URL */}
         <img 
           className={styles.menuBtn} 
-          src={getImageUrl(menuOpen ? "assets/nav/closeIcon.png" : "assets/nav/MenuIcon.png")} 
+          src={menuOpen ? CloseIcon : MenuIcon} 
           alt="Menu Icon"
           onClick={() => setMenuOpen(!menuOpen)}
         />
