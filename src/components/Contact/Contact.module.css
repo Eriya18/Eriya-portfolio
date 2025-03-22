@@ -51,7 +51,16 @@
         flex-direction: column;
         align-items: center;
     }
+    .text h2{
+        font-size: 50px;
+    }
+    .text p{
+        font-size: 25px;
+    }
     .links{
         align-items: center;
+    }
+    .link a{
+        font-size: 20px;
     }
 }
