@@ -32,7 +32,7 @@ export const Experience = () => {
        
         <div className={styles.history}>
           {history.map((historyItem, id) => (
-            <li key={id} className={styles.historyItem}>
+            <div key={id} className={styles.historyItem}>
               <img src={getImageUrl(historyItem.imageSrc)} alt={historyItem.organisation} />
               <div className={styles.historyItemDetails}>
                 <h3>{`${historyItem.role}, ${historyItem.organisation}`}</h3>
@@ -43,7 +43,7 @@ export const Experience = () => {
                   ))}
                 </ul>
               </div>
-            </li>
+            </div>
           ))}
         </div>
 
