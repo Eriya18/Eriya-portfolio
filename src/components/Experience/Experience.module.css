@@ -21,6 +21,8 @@
     flex-direction: row;
     align-items: flex-start;
     margin-bottom: 14px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 .content{
     display: flex;
@@ -109,5 +111,13 @@
     .history{
         width: 100%;
         gap: 9px;
+    }
+    .titles {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; /* Reduced gap on mobile */
+    }
+    .title {
+        margin-right: 0; /* Remove margin on mobile */
     }
 }
