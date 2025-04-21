@@ -21,8 +21,6 @@
     flex-direction: row;
     align-items: flex-start;
     margin-bottom: 14px;
-    flex-wrap: wrap;
-    gap: 20px;
 }
 .content{
     display: flex;
@@ -84,10 +82,12 @@
 .historyItemDetails h3{
     font-size: 30px;
     font-weight: 500;
+    margin: 0 0 10px 0;
 }
-.historyItemDetails h3{
+.historyItemDetails p{
     font-size: 20px;
     font-weight: 300;
+    margin: 0 0 10px 0;
 }
 .historyItemDetails ul{
     margin-top: 6px;
@@ -111,13 +111,5 @@
     .history{
         width: 100%;
         gap: 9px;
-    }
-    .titles {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px; /* Reduced gap on mobile */
-    }
-    .title {
-        margin-right: 0; /* Remove margin on mobile */
     }
 }
