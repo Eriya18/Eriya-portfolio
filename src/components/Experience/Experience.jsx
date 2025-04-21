@@ -10,7 +10,10 @@ export const getImageUrl = (path) => {
 export const Experience = () => {
   return (
     <section className={styles.container} id="Experience">
+      <div className={styles.titles}>
       <h2 className={styles.title}>Skills</h2>
+      <h2 className={styles.title}>Experience</h2>
+      </div>
       <div className={styles.content}>
 
         {/* Skills Section */}
@@ -26,7 +29,7 @@ export const Experience = () => {
         </div>
 
         {/* Experience History Section */}
-        <h2 className={styles.title}>Experience</h2>
+       
         <ul className={styles.history}>
           {history.map((historyItem, id) => (
             <li key={id} className={styles.historyItem}>
