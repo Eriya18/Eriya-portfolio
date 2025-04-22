@@ -4,18 +4,18 @@ import history from "../../data/history.json";
 import styles from "./Experience.module.css";
 
 export const getImageUrl = (path) => {
-  return `${import.meta.env.BASE_URL}${path}`;
+  return path;
 };
 
 export const Experience = () => {
   return (
-    <section className={styles.container} id="Experience">
-      <div className={styles.titles}>
-        <h2 className={styles.title}>Skills</h2>
-        <h2 className={styles.title}>Experience</h2>
-      </div>
-      <div className={styles.contentWrapper}>
-        <div className={styles.skillsSection}>
+    <div className={styles.container} id="Experience">
+      {/* Skills Section */}
+      <section className={styles.section}>
+        <div className={styles.sectionHeader}>
+          <h2 className={styles.title}>Skills</h2>
+        </div>
+        <div className={styles.skillsContent}>
           <div className={styles.skills}>
             {skills.map((skill, id) => (
               <div key={id} className={styles.skill}>
@@ -27,7 +27,14 @@ export const Experience = () => {
             ))}
           </div>
         </div>
-        <div className={styles.experienceSection}>
+      </section>
+
+      {/* Experience Section - Separate from Skills */}
+      <section className={styles.section}>
+        <div className={styles.sectionHeader}>
+          <h2 className={styles.title}>Experience</h2>
+        </div>
+        <div className={styles.experienceContent}>
           <div className={styles.history}>
             {history.map((historyItem, id) => (
               <div key={id} className={styles.historyItem}>
@@ -45,7 +52,7 @@ export const Experience = () => {
             ))}
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
