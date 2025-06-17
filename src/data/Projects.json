@@ -7,11 +7,11 @@
         "demo": "https://eriya18.github.io/Age_Calc/"
   },
   {
-    "title": "EMI Calculator",
-    "imageSrc": "assets/projects/emi_calc.png",
-    "description": "A simple EMI calculator to compute loan repayments based on principal, interest rate, and tenure.",
+    "title": "Image Generator",
+    "imageSrc": "assets/projects/Image-gen.png",
+    "description": "A JavaScript web app that lets users search and view high-quality images using the Unsplash API.",
     "skills": ["HTML", "CSS", "JS"],
-    "demo": "https://eriya18.github.io/EMI_Calc/"
+    "demo": "https://eriya18.github.io/image-generator/"
   },
   {
     "title": "Word Guess Game",
@@ -20,4 +20,5 @@
     "skills": ["HTML", "CSS", "JS"],
     "demo": "https://eriya18.github.io/WordGuess/"
     }
+
 ]
