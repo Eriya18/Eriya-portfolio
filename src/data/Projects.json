@@ -8,7 +8,7 @@
   },
   {
     "title": "Image Generator",
-    "imageSrc": "assets/projects/Image-gene.png",
+    "imageSrc": "assets/projects/Image_gen.png",
     "description": "A JavaScript web app that lets users search and view high-quality images using the Unsplash API.",
     "skills": ["HTML", "CSS", "JS"],
     "demo": "https://eriya18.github.io/image-generator/"
